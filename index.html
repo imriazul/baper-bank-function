@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deshboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="mt-12 bg-green-100 py-10 w-2/3 mx-auto">
+        <h1 class="text-center text-5xl text-pink-600 mb-8 pb-6">Baper Bank Deshboard</h1>
+        <div class="grid grid-cols-3 gap-4 text-white w-9/12 mx-auto">
+            <div class="bg-lime-600 rounded-lg p-5">
+                <h3 class="text-3xl font-semibold mb-2">Deposite</h3>
+                <h2 class="text-5xl font-bold">$ <spain id="old-depo">00</spain>
+                </h2>
+            </div>
+            <div class="bg-red-400 rounded-lg p-5">
+                <h3 class="text-3xl font-semibold mb-2">Withdrow</h3>
+                <h2 class="text-5xl font-bold">$ <span id="with-text">00</span></h2>
+            </div>
+            <div class="bg-yellow-500 rounded-lg p-5">
+                <h3 class="text-3xl font-semibold mb-2">Balance</h3>
+                <h2 class="text-5xl font-bold">$ <span id="total-balance">1000</span></h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mx-auto w-9/12 mt-5">
+            <div class="bg-blue-500 rounded-lg p-5">
+                <h3 class="text-3xl font-semibold mb-2 text-white">Plese Deposit</h3>
+                <input id="depo-field" class="w-9/12 mx-auto mb-2 px-5" type="text" name=""
+                    placeholder="$ Enter Deposite Amaunt">
+                <button id="dep-btn" class="block rounded-lg hover:bg-green-700 bg-green-600 px-4 py-2 text-white">Deposit</button>
+            </div>
+            <div class="bg-purple-500 rounded-lg p-5">
+                <h3 class="text-3xl font-semibold mb-2 text-white">Plese Withdrow</h3>
+                <input class="w-9/12 mx-auto mb-2 px-5" type="text" name="" id="withd-field"
+                    placeholder="$ Enter Withdrow Amaunt">
+                <button id="with-btn" class="block rounded-lg hover:bg-red-400 bg-red-500 px-4 py-2 text-white">Withdrow</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdrow.js"></script>
+</body>
+</html>
